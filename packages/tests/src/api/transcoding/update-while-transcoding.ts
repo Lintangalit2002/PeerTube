@@ -20,7 +20,6 @@ describe('Test update video privacy while transcoding', function () {
   const videoUUIDs: string[] = []
 
   function runTestSuite (hlsOnly: boolean, objectStorageBaseUrl?: string) {
-
     it('Should not have an error while quickly updating a private video to public after upload #1', async function () {
       this.timeout(360_000)
 
@@ -102,7 +101,6 @@ describe('Test update video privacy while transcoding', function () {
   })
 
   describe('With only HLS enabled', function () {
-
     before(async function () {
       await servers[0].config.updateExistingConfig({
         newConfig: {
@@ -142,10 +140,14 @@ describe('Test update video privacy while transcoding', function () {
       this.timeout(120000)
 
       const configOverride = objectStorage.getDefaultMockConfig()
+      console.log('preparing mock')
       await objectStorage.prepareDefaultMockBuckets()
+      console.log('prepared mock')
 
       await servers[0].kill()
+      console.log('kill')
       await servers[0].run(configOverride)
+      console.log('ran')
     })
 
     runTestSuite(true, objectStorage.getMockPlaylistBaseUrl())
