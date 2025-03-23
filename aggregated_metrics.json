@@ -1,0 +1,19 @@
+{
+    "total_files": 1629,
+    "total_program_length": 455634.0,
+    "avg_program_length": 279.70165745856355,
+    "total_program_volume": 3219218.49999999,
+    "avg_program_volume": 1976.1930632289689,
+    "total_difficulty": 25806.920000000006,
+    "avg_difficulty": 15.842185389809703,
+    "total_effort": 105399789.66999996,
+    "avg_effort": 64702.14221608346,
+    "total_estimated_bugs": 1073.2399999999882,
+    "avg_estimated_bugs": 0.658833640270097,
+    "total_time": 5855543.950000008,
+    "avg_time": 3594.56350521793,
+    "total_maintainability_index": 114108.52000000018,
+    "avg_maintainability_index": 70.04820135052191,
+    "total_cyclomatic_complexity": 22073.0,
+    "avg_cyclomatic_complexity": 13.550030693677103
+}
